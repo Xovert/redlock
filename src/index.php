@@ -10,6 +10,7 @@
                 border-style:solid;
                 border-width:2px;
                 border-color:black;
+                font-size: 25px;
             }
             table.center {
                 margin-left:auto;

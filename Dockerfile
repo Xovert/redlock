@@ -10,7 +10,7 @@ RUN apt-get update && \
     docker-php-ext-install pdo
 
 # Copy Web Contents to root folder for web hosting.
-COPY index.php redlock-db.sql ./
+COPY ./src ./
 
 # IMPORT backup database Redlock, and turn it into SQLite db.
 RUN sqlite3 ./Redlock.sqlite < ./redlock-db.sql
